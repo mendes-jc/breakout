@@ -6,7 +6,9 @@ namespace Breakout
     {
         [SerializeField] private BoxCollider2D BoxCollider2D;
 
-        private void Start() =>
+        private void Start()
+        {
             BoxCollider2D.size = (transform as RectTransform).rect.size;
+        }
     }
 }
